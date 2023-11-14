@@ -16,13 +16,13 @@ export class PortfolioComponent implements OnInit {
 
     isCollapsed: boolean = true;
     typescript: boolean = false;
-    //javascript: Boolean = false;
     python: Boolean = false;
     csharp: boolean = false;
     java: Boolean = false;
     angular:boolean=false;
     nodejs: Boolean = false;
     springboot: Boolean = false;
+    filtering: Boolean = false;
   
 
   constructor(private titleService: Title, private projectService: ProjectsService){
@@ -63,9 +63,24 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.SPRINGBOOT);
     }
 
-
+    else{
+      this.filtering = true;
+    }
     
 
     this.projects = this.projectService.GetProjectsbyFilter(filterTags);
+  }
+
+  ResetFilters(){
+    this.typescript = false;
+    this.python  = false;
+    this.csharp = false;
+    this.java = false;
+    this.angular =false;
+    this.nodejs = false;
+    this.springboot = false;
+    this.filtering = false;
+
+    this.projects= this.projectService.GetProjects();
   }
 }
