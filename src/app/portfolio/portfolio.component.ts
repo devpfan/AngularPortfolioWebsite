@@ -11,15 +11,18 @@ import { ProjectsService } from '../_services/projects.service';
 })
 export class PortfolioComponent implements OnInit {
 
-  /*   ANGULAR
-TYPESCRIPT
-PYTHON
-CSHARP
-JAVA
-NODEJS
-REACT */
   
     projects={} as Project[];
+
+    isCollapsed: boolean = true;
+    typescript: boolean = false;
+    //javascript: Boolean = false;
+    python: Boolean = false;
+    csharp: boolean = false;
+    java: Boolean = false;
+    angular:boolean=false;
+    nodejs: Boolean = false;
+    springboot: Boolean = false;
   
 
   constructor(private titleService: Title, private projectService: ProjectsService){
@@ -29,5 +32,40 @@ REACT */
     this.projects = this.projectService.GetProjects();
   }
 
+  Filter(){
+    let filterTags: Tag[]=[];
 
+    if(this.typescript){
+      filterTags.push(Tag.TYPESCRIPT);
+    }
+
+    if(this.angular){
+      filterTags.push(Tag.ANGULAR);
+    }
+
+    if(this.java){
+      filterTags.push(Tag.JAVA);
+    }
+
+    if(this.csharp){
+      filterTags.push(Tag.CSHARP);
+    }
+
+    if(this.nodejs){
+      filterTags.push(Tag.NODEJS);
+    }
+
+    if(this.python){
+      filterTags.push(Tag.PYTHON);
+    }
+
+    if(this.springboot){
+      filterTags.push(Tag.SPRINGBOOT);
+    }
+
+
+    
+
+    this.projects = this.projectService.GetProjectsbyFilter(filterTags);
+  }
 }
