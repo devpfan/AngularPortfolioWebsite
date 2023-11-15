@@ -1,1 +1,177 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                   </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Specialist Support</h2>
+                    <h3 class="text-primary">Sample company</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Specialist Support</h2>
+                    <h3 class="text-primary">Sample company</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">System Analytics</h2>
+                    <h3 class="text-primary">Sample company</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
+                    </ul>
+                </div>
+                <hr>
+    
+            </accordion-group>
+    
+    
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                   </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Systems Engineer</h2>
+                    <h3 class="text-primary">UNAD</h3>
+                    <ul>
+                        <li>Expected graduation 2024</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Developer</h2>
+                    <h3 class="text-primary">UNAD</h3>
+                    <ul>
+                        <li>Graduated</li>
+                        <li>Participated in Lorem ipsum dolor sit.</li>
+                        
+                    </ul>
+                </div>
+    
+            </accordion-group>
+    
+    
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                   </div>
+                </button>
+                <div style="text-align: left;">               
+                    <h3>Java Fundamentals</h3>
+                    <ul>
+                        <li>Oracle Academy</li>
+                        <li>xxxx</li>
+                        <li>x Lorem, ipsum.</li>                  
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h3>Spring Boot</h3>
+                    
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">               
+                    <h3>SQL</h3>
+                    <ul>
+                        <li>Oracle Academy</li>
+                        <li>xxxx</li>
+                        <li>x Lorem, ipsum.</li>                  
+                    </ul>
+                </div>
+                <hr>
+    
+            </accordion-group>
+    
+    
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                   </div>
+                </button>
+                <div class="row" style="text-align:left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Spring Boot</li>
+                            <li>Angular</li>
+                            <li>NodeJS</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other skills:</h3>
+                        <ul>
+                            <li>SQL</li>
+                            <li>Surce Control</li>
+                            <li>MVC Architecture</li>
+                            <li>Agile Development</li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+            </accordion-group>
+        </accordion>
+    </div>
+    
+</div>
