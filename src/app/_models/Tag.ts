@@ -7,10 +7,14 @@ export class Tag{
     static readonly TYPESCRIPT = new Tag('TypeScript', 'darkred');
     static readonly PYTHON = new Tag('Python', 'pink');
     static readonly CSHARP = new Tag('C#', 'green');
-    static readonly JAVA = new Tag('Java', 'orange');
+    static readonly JAVA = new Tag('Java', 'red');
     static readonly NODEJS = new Tag('Node.JS', 'brown');
     static readonly REACT = new Tag('React', 'blue');
     static readonly SPRINGBOOT = new Tag('Springboot', 'green');
+    static readonly MYSQL = new Tag('MySQL', 'blue');
+    static readonly Bootstrap = new Tag('Bootstrap', 'purple');
+    static readonly JPA = new Tag('JPA', 'red');
+    static readonly THYMELEAF = new Tag('Thymeleaf', 'Orange');
 
     private constructor(private readonly key: string, public readonly color: string){
 

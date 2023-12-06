@@ -1,4 +1,11 @@
 .jumbotron{
-    padding: 2rem 1rem;
-    background-color: #e9ecef;
+  /* Estilos para el banner */
+.banner {
+    background-color: #3498db; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido principal */
+}
+
 }

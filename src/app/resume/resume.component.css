@@ -5,3 +5,23 @@ accordion-group::ng-deep .btn-link{
 accordion-group::ng-deep .card-header{
     background-color: #007bff;
 }
+
+/* Estilos para la lista con viñetas personalizadas */
+.custom-list {
+    list-style-type: none; /* Elimina la viñeta predeterminada */
+    padding-left: 0; /* Elimina el espacio a la izquierda de la lista */
+}
+
+.custom-list li {
+    margin-bottom: 8px; /* Añade un espacio entre elementos de la lista */
+}
+
+.custom-list li:before {
+    content: "\2192"; /* Código de carácter Unicode para un círculo sólido */
+    color: #3498db; /* Color del círculo */
+    display: inline-block;
+    width: 1em; /* Ancho del círculo */
+    margin-left: 1em; /* Desplaza el círculo hacia la izquierda para alinearlo */
+    font-size: 1.5em; /* Tamaño del círculo */
+    margin-right: 8px; /* Añade espacio entre el círculo y el texto del elemento de la lista */
+}

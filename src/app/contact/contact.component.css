@@ -1,0 +1,68 @@
+/* Estilos generales */
+.contenido {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .formulario-contacto {
+    background-color: #55a8df;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Estilos para los campos del formulario */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+  }
+  
+  /* Estilos para el botón de enviar */
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Estilos para el formulario en dispositivos pequeños */
+  @media screen and (max-width: 600px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+    }
+  }
+  

@@ -1,12 +1,12 @@
 <div class="container text-center">
-    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Descarga mi CV en PDF</button>
 
     <div class="pb-2">
         <accordion [isAnimated]="true" class="shadow">
             <accordion-group [(isOpen)]="isWorkExperienceOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Work Experience</div>
+                    <div class="btn-link">Experiencia Laboral</div>
                     
                     <div style="width: 10.95px;">
                         <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
@@ -15,41 +15,34 @@
                 </button>
 
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Specialist Support</h2>
-                    <h3 class="text-primary">Sample company</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
+                    <h2 class="mb-0">Analista de Soporte</h2>
+                    <h3 class="text-primary">Universidad Pontificia Bolivariana</h3>
+                    <ul class="custom-class">
+                        <li>Soporte hardware-software mediante Help Desk con ITIL a equipos de cómputo.</li>
+                        <li>Atención y categorización de incidencias a sistemas Windows, Mac y Linux así como desistemas móviles.</li>
+                        <li>Atención a incidencias de redes LAN y telefonía IP.</li>
+                        <li>Capacitación al cliente/usuario final en uso de plataformas tecnológicas.</li>
+                        <li>Administración de plataforma de correo Office 365 (Desbloqueos, cambios de contraseña,reseteo de multifactor de autenticación)</li>
+                        <li>Implementación y mantenimiento del proceso de certificación de calidad del área.</li>
+                        <li>Levantamiento de requerimientos y pruebas de software de los desarrollos internos.</li>
+                        <li>Entrenamiento de practicantes en el área de soporte.</li>
                     </ul>
                 </div>
                 <hr>
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Specialist Support</h2>
-                    <h3 class="text-primary">Sample company</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
+                    <h2 class="mb-0">Analista de Aplicaciones</h2>
+                    <h3 class="text-primary">Cielum - Omnivida</h3>
+                    <ul class="custom-class">
+                        <li>Administración y gestión de usuarios internos y prestadores en aplicativo interno a nivelnacional para IPS Sura (Creación, roles, permisos, sedes, contraseñas)</li>
+                        <li>Generación de reportes y tablas dinámicas en Excel.</li>
+                        <li>Análisis de indicadores de gestión y reportes de oportunidad del servicio. Generación de incidentes en mesa de servicios a equipo de desarrollo</li>
+                        <li>Roadmap para definir nuevos casos de usos y requerimientos del aplicativo.</li>
+                     
                     </ul>
                 </div>
                 <hr>
-                <div style="text-align: left;">
-                    <h2 class="mb-0">System Analytics</h2>
-                    <h3 class="text-primary">Sample company</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
-                    </ul>
-                </div>
-                <hr>
+               
+ 
     
             </accordion-group>
     
@@ -57,7 +50,7 @@
             <accordion-group [(isOpen)]="isEducationOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Education</div>
+                    <div class="btn-link">Educación</div>
                     
                     <div style="width: 10.95px;">
                         <div *ngIf="!isEducationOpen" style="color: white;">></div>
@@ -65,21 +58,31 @@
                    </div>
                 </button>
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Systems Engineer</h2>
-                    <h3 class="text-primary">UNAD</h3>
-                    <ul>
-                        <li>Expected graduation 2024</li>
+                    <h2 class="mb-0">Ingeniero de Sistemas</h2>
+                    <h3 class="text-primary">Universidad Nacional Abierta y a Distancia - UNAD</h3>
+                    <ul class="custom-class">
+                        <li>Graduación esperada en 2024 2024</li>
                         <li>Lorem ipsum dolor sit amet.</li>
                         
                     </ul>
                 </div>
                 <hr>
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Software Developer</h2>
-                    <h3 class="text-primary">UNAD</h3>
-                    <ul>
-                        <li>Graduated</li>
-                        <li>Participated in Lorem ipsum dolor sit.</li>
+                    <h2 class="mb-0">Desarrollador de Software</h2>
+                    <h3 class="text-primary">Universidad Nacional Abierta y a Distancia - UNAD</h3>
+                    <ul class="custom-class">
+                        <li>Graduado</li>
+                        <li>Diplomado en Profundización en Pruebas de Software</li>
+                        
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Técnico Informático</h2>
+                    <h3 class="text-primary">Tecnológico San Agustín</h3>
+                    <ul class="custom-class">
+                        <li>Graduado</li>
+                     
                         
                     </ul>
                 </div>
@@ -90,7 +93,7 @@
             <accordion-group [(isOpen)]="isCertificationsOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Certifications</div>
+                    <div class="btn-link">Otros Estudios</div>
                     
                     <div style="width: 10.95px;">
                         <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
@@ -98,32 +101,68 @@
                    </div>
                 </button>
                 <div style="text-align: left;">               
-                    <h3>Java Fundamentals</h3>
-                    <ul>
-                        <li>Oracle Academy</li>
-                        <li>xxxx</li>
-                        <li>x Lorem, ipsum.</li>                  
-                    </ul>
-                </div>
-                <hr>
-                <div style="text-align: left;">
-                    <h3>Spring Boot</h3>
-                    
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!</li>
+                    <h3>Backend Java + Spring Boot</h3>
+                    <ul class="custom-list">
+                        <li>One Oracle Next Education</li>
+                        <li>2023</li>
+                        <li>331 horas</li>                  
                     </ul>
                 </div>
                 <hr>
                 <div style="text-align: left;">               
-                    <h3>SQL</h3>
-                    <ul>
+                    <h3>Diplomado de Programación en Java</h3>
+                    <ul class="custom-list">
+                        <li>Politécnico de Colombia</li>
+                        <li>2023</li>
+                        <li>120 horas</li>                  
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">               
+                    <h3>Diplomado en Desarrollo web Fullstack</h3>
+                    <ul class="custom-list">
+                        <li>Universidad Pontificia Bolivariana</li>
+                        <li>2022</li>
+                        <li>102 horas</li>                  
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">               
+                    <h3>Diplomado de Profundizacion en pruebas de Software</h3>
+                    <ul class="custom-list">
+                        <li>Universidad Nacional Abierta y a Distancia - UNAD</li>
+                        <li>2021</li>
+                        <li>180 horas</li>                  
+                    </ul>
+                </div>
+                <hr>
+
+                <div style="text-align: left;">               
+                    <h3>Curso Consultas SQL con MYSQL</h3>
+                    <ul class="custom-list">
+                        <li>One Oracle Next Education</li>
+                        <li>2023</li>
+                        <li>16 horas</li>                  
+                    </ul>
+                </div>
+                <hr>
+
+                <div style="text-align: left;">               
+                    <h3>Java Fundamentals</h3>
+                    <ul class="custom-list">
                         <li>Oracle Academy</li>
-                        <li>xxxx</li>
-                        <li>x Lorem, ipsum.</li>                  
+                        <li>2022</li>
+                        <li>60 horas</li>                  
+                    </ul>
+                </div>
+                <hr>
+                
+                <div style="text-align: left;">               
+                    <h3>Windows Server 2019: Active Directory y Directivas de Grupo</h3>
+                    <ul class="custom-list">
+                        <li>Udemy</li>
+                        <li>2023</li>
+                        <li>4.5 horas</li>                  
                     </ul>
                 </div>
                 <hr>
@@ -134,7 +173,7 @@
             <accordion-group [(isOpen)]="isSkillsOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Skills</div>
+                    <div class="btn-link">Habilidades</div>
                     
                     <div style="width: 10.95px;">
                         <div *ngIf="!isSkillsOpen" style="color: white;">></div>
@@ -143,28 +182,28 @@
                 </button>
                 <div class="row" style="text-align:left;">
                     <div class="col">
-                        <h3>Programming Languages:</h3>
-                        <ul>
+                        <h3>Programming Languages</h3>
+                        <ul class="custom-class">
                             <li>Java</li>
                             <li>JavaScript</li>
                             <li>Python</li>
                         </ul>
                     </div>
                     <div class="col">
-                        <h3>Frameworks:</h3>
-                        <ul>
+                        <h3>Frameworks</h3>
+                        <ul class="custom-class">
                             <li>Spring Boot</li>
                             <li>Angular</li>
                             <li>NodeJS</li>
                         </ul>
                     </div>
                     <div class="col">
-                        <h3>Other skills:</h3>
-                        <ul>
+                        <h3>Otras Habilidades</h3>
+                        <ul class="custom-class">
                             <li>SQL</li>
-                            <li>Surce Control</li>
-                            <li>MVC Architecture</li>
-                            <li>Agile Development</li>
+                            <li>Control de versiones</li>
+                            <li>Arquitectura MVC</li>
+                            <li>Desarrollo Agil</li>
                         </ul>
                     </div>
     
