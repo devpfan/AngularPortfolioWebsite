@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../_models/Project';
 import { Tag } from '../_models/Tag';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +19,8 @@ export class ProjectsService {
     {id: 6, name: "Spring Boot", pictures: ["../../assets/Image1.png","../../assets/Image2.png","../../assets/Image3.png"], projectLink: "https://github.com/devpfan", summary: "Mobile app developed in java that tracks the departure and arrival of trains.", description: "am, illum dolore eu fugiat nul35rf2fnt mollit anim id est laborum.", tags: [Tag.SPRINGBOOT]}
   ];
 
-  constructor() { }
+  private apiUrl = 'http://localhost:3000'; // URL del backend
+  constructor(private http: HttpClient) { }
 
   GetProjects(){
     return this.projects;
@@ -49,4 +52,10 @@ export class ProjectsService {
     });
     return filteredProjects;
   }
+
+  enviarFormulario(datos: any): Observable<any>{
+    const url = `${this.apiUrl}/enviar-mensaje`;
+    return this.http.post(url, datos);
+  }
+
 }
