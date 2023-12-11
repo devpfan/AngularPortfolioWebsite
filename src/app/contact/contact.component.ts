@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ProjectsService } from '../_services/projects.service';
+
 
 
 @Component({
@@ -9,30 +9,15 @@ import { ProjectsService } from '../_services/projects.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  datosFormulario = { nombre: '', correo: '', mensaje: '' };
 
-  datosFormulario={
-    nombre: '',
-    correo:'',
-    mensaje:''
-  };
-
-  constructor(
-    private titleService: Title,
-    private projectsService: ProjectsService
-    ){
-    this.titleService.setTitle('Paulo Martinez - Contact')
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Paulo Martinez - Contact');
   }
 
-  enviarFormulario(){
-    this.projectsService.enviarFormulario(this.datosFormulario).subscribe(
-      (respuesta: any)=>{
-        console.log('Mensaje enviado con exito', respuesta);
-      },
-      (error)=>{
-        console.error('Error al enviar el mensaje', error)
-      }
-    );
+  enviarFormulario() {
+    // Puedes agregar lógica adicional aquí si es necesario
+    console.log('Enviando formulario:', this.datosFormulario);
   }
-
-
 }
+

@@ -1,11 +1,21 @@
-.jumbotron{
+.jumbotron {
   /* Estilos para el banner */
-.banner {
-    background-color: #3498db; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Margen inferior para separar del contenido principal */
-}
+  .banner {
+      background-color: #3498db; 
+      color: #ffffff; 
+      padding: 20px; 
+      border-radius: 10px; 
+      margin-bottom: 20px; 
+  }
 
+  /* Estilo para los títulos del banner */
+  .banner h1 {
+      font-size: 2.5em; 
+      margin-bottom: 10px; 
+  }
+
+  /* Estilo para el párrafo del banner */
+  .banner p {
+      font-size: 1.2em; 
+  }
 }

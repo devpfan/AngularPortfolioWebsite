@@ -1,25 +1,34 @@
+<!-- contact.component.html -->
 
 <div class="contenido">
-    <div class="formulario-contacto">
-      <h2>Dejame un mensaje</h2>
-      <form (submit)="enviarFormulario()">
-        <div class="form-group">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" [(ngModel)]="datosFormulario.nombre" required>
-        </div>
-  
-        <div class="form-group">
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" id="correo" name="correo" [(ngModel)]="datosFormulario.correo" required>
-        </div>
-  
-        <div class="form-group">
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" [(ngModel)]="datosFormulario.mensaje" required></textarea>
-        </div>
-  
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+  <div class="formulario-contacto">
+    <h2>Dejame un mensaje</h2>
+    <form action="https://formspree.io/f/mvojeava" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
   </div>
-  
+</div>
+<section class="construccion">
+  <div class="mensaje">
+    <img src="../../assets/perrito-durmiendo.jpg" alt="Perrito Durmiendo">
+    <h2>¡En Construcción!</h2>
+    <p>¡Oops! Parece que esta sección está tomando una siesta. Estamos ocupados martillando y puliendo. Mientras tanto, siéntete libre de explorar otras áreas del sitio. 
+      ¡Volveremos epicamente en breve!</p>
+    <a routerLink="/" class="volver-inicio">Volver al Inicio</a>
+  </div>
+</section>
