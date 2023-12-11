@@ -1,0 +1,45 @@
+/* Estilo general para la barra de navegación */
+.navbar-expand-md {
+    background-color: #f8f9fa; 
+    padding: 10px 0; 
+}
+
+/* Contenedor para centrar los elementos */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para la lista de navegación */
+.nav {
+    list-style-type: none; 
+    display: flex;
+    gap: 20px; 
+}
+
+/* Estilo para los elementos de la lista */
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none; 
+    color: #6c757d; 
+    font-weight: bold;
+    padding: 8px 16px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Estilo al pasar el ratón sobre el enlace */
+.nav-link:hover {
+    background-color: #b0d0f0; 
+    border: 2px solid #ced4da; 
+    border-radius: 8px; 
+    padding: 6px 14px; 
+    color: #212529; 
+}
+
+/* Estilo para el enlace activo */
+.text-dark {
+    color: #212529 !important; 
+}

@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     ProjectCardComponent,
     ProjectModalComponent
+   
   ],
   imports: [
     BrowserModule,
